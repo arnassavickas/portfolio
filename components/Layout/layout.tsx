@@ -1,14 +1,17 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
 
 export const siteTitle = 'Arnas Savickas - web developer';
 
-export default function Layout({ children }) {
+const Layout: React.FC = ({ children }) => {
   return (
     <div>
       <Head>
         <link rel='icon' href='/favicon.ico' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap'
+          rel='stylesheet'
+        />
         <meta
           name='description'
           content={`Hi, I'm Arnas, a web developer.
@@ -20,4 +23,6 @@ export default function Layout({ children }) {
       <main>{children}</main>
     </div>
   );
-}
+};
+
+export default Layout;

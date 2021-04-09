@@ -1,0 +1,45 @@
+.typewriter {
+  width: 300px;
+  div {
+    display: table;
+  }
+
+  .lines {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.15em solid rgba(255, 255, 255, 0);
+    white-space: nowrap;
+    margin: 0 auto;
+  }
+  .firstLine {
+    animation: typing 0.3s steps(3, end) 1s both, blink-caret 0.75s step-end 3;
+  }
+
+  .secondLine {
+    animation: typing 1.9s steps(19, end) 2.5s both,
+      blink-caret 0.75s step-end 4 2s;
+  }
+  .thirdLine {
+    animation: typing 1.5s steps(16, end) 5.2s both,
+      blink-caret 0.75s step-end infinite 5.2s;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: rgb(255, 255, 255);
+  }
+  50% {
+    border-color: transparent;
+  }
+}
