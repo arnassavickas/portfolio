@@ -1,0 +1,18 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 4rem 1rem;
+}
+
+.paragraph {
+  max-width: 600px;
+  text-align: center;
+}
+
+.profile {
+  border: 5px solid rgb(121, 158, 201) !important;
+  border-radius: 50%;
+}
