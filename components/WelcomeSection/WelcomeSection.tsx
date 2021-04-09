@@ -7,10 +7,12 @@ const WelcomeSection: React.FC = () => {
   const smoothScrollTo = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     const element = document.getElementById('about');
-    element.scrollIntoView({
-      block: 'start',
-      behavior: 'smooth',
-    });
+    if (element) {
+      element.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+      });
+    }
   };
 
   return (
