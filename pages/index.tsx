@@ -4,7 +4,7 @@ import styles from './index.module.scss';
 
 export default function Home() {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -14,8 +14,7 @@ export default function Home() {
           <br />a web developer
         </h1>
       </section>
-      <section className={styles.flex}>
-      </section>
+      <section className={styles.flex}></section>
     </Layout>
   );
 }
