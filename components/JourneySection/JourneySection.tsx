@@ -16,6 +16,10 @@ const JourneySection: React.FC = () => {
       <Typography variant='h4' component='h2'>
         Experience and Education
       </Typography>
+      <Typography variant='h5' component='h3'>
+        Courses
+      </Typography>
+
       <Timeline align='alternate'>
         <TimelineCard
           date='12/2020 - 01/2021'
@@ -58,7 +62,7 @@ const JourneySection: React.FC = () => {
           description={
             <div>
               <div>The course, that sparked my love for programming.</div>
-              <div>Tech used: C, Python, Flask , SQL, HTML, CSS</div>
+              <div>Tech used: C, Python, Flask, SQL, HTML, CSS</div>
             </div>
           }
           buttons={[
@@ -81,12 +85,11 @@ const JourneySection: React.FC = () => {
           ]}
           icon={<CodeTwoToneIcon color='primary' />}
         />
-        <TimelineCard
-          date='2018 - 2020'
-          title='Master of Printing Engineering'
-          subHeader='Vilnius Gediminas Technical University'
-          icon={<SchoolIcon color='primary' />}
-        />
+      </Timeline>
+      <Typography variant='h5' component='h3'>
+        Jobs
+      </Typography>
+      <Timeline align='alternate'>
         <TimelineCard
           date='09/2016 - Present'
           title='Sales Manager'
@@ -116,6 +119,17 @@ const JourneySection: React.FC = () => {
             </div>
           }
           icon={<WorkOutlineOutlinedIcon color='primary' />}
+        />
+      </Timeline>
+      <Typography variant='h5' component='h3'>
+        University
+      </Typography>
+      <Timeline align='alternate'>
+        <TimelineCard
+          date='2018 - 2020'
+          title='Master of Printing Engineering'
+          subHeader='Vilnius Gediminas Technical University'
+          icon={<SchoolIcon color='primary' />}
         />
         <TimelineCard
           date='2014 - 2018'

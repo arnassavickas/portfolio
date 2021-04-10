@@ -13,13 +13,9 @@ const AboutMeSection: React.FC = () => {
         About Me
       </Typography>
       <p className={styles.paragraph}>
-        Since learning how to reinstall Windows XP in 5th grade, I have always
-        felt like I should be doing{' '}
-        <span className='italic'>something with the computers</span>.
-      </p>
-      <p className={styles.paragraph}>
-        Unfortunatelly, one decision after another, and I have moved my life at
-        an entirely different direction - engineering and sales.
+        Since childhood, I have felt like I should be making a career in
+        IT. Unfortunately, one decision after another, and I have moved my life
+        in an entirely different direction - engineering and sales.
       </p>
       <p className={styles.paragraph}>
         But the time has come to follow my dreams and finally become a
