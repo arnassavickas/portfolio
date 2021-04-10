@@ -4,6 +4,7 @@ import WelcomeSection from '../components/WelcomeSection/WelcomeSection';
 import AboutMeSection from '../components/AboutMeSection/AboutMeSection';
 import TimelineSection from '../components/ProjectsSection/ProjectsSection';
 import JourneySection from '../components/JourneySection/JourneySection';
+import FooterSection from '../components/FooterSection/FooterSection';
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
       <AboutMeSection />
       <TimelineSection />
       <JourneySection />
+      <FooterSection />
     </Layout>
   );
 };
