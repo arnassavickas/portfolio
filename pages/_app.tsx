@@ -1,6 +1,10 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import '../styles/global.scss';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import {
+  createMuiTheme,
+  ThemeProvider,
+  responsiveFontSizes,
+} from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
   typography: {
@@ -23,12 +27,19 @@ const theme = createMuiTheme({
         },
       },
     },
+    MuiTimelineSeparator: {
+      root: {
+        ['@media (max-width:780px)']: {
+          display: 'none',
+        },
+      },
+    },
   },
 });
 
 export default function App({ Component, pageProps }) {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={responsiveFontSizes(theme)}>
       <Component {...pageProps} />
     </ThemeProvider>
   );
