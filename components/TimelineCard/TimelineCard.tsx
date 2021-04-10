@@ -13,7 +13,7 @@ import CardImage from '../CardImage/CardImage';
 interface TimelineCardProps {
   date: string;
   title: string;
-  subHeader: string;
+  subHeader: React.ReactNode[] | string;
   image?: string;
   imageTitle?: string;
   description?: React.ReactNode;

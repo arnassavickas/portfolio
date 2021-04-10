@@ -11,7 +11,7 @@ import { CardActions } from '@material-ui/core';
 interface CardImageProps {
   title: string;
   date: string;
-  subHeader: string;
+  subHeader: React.ReactNode[] | string;
   image?: string;
   imageTitle?: string;
   description?: React.ReactNode;

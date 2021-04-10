@@ -53,6 +53,14 @@ const theme = createMuiTheme({
         },
       },
     },
+    MuiTimelineContent: {
+      root: {
+        marginBottom: '2rem',
+        ['@media (max-width:780px)']: {
+          padding: '6px 0',
+        },
+      },
+    },
     MuiCardHeader: {
       avatar: {
         ['@media (min-width:780px)']: {

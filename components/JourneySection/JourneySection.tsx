@@ -20,7 +20,7 @@ const JourneySection: React.FC = () => {
         <TimelineCard
           date='12/2020 - 01/2021'
           title='Full Stack open'
-          subHeader='by Helsinki University'
+          subHeader='Course by Helsinki University'
           description={
             <div>
               <div>Got introduced to full-stack web development.</div>
@@ -54,7 +54,7 @@ const JourneySection: React.FC = () => {
         <TimelineCard
           date='09/2020 - 10/2020'
           title='CS50x Introduction to Computer Science'
-          subHeader='by Harvard University'
+          subHeader='Course by Harvard University'
           description={
             <div>
               <div>The course, that sparked my love for programming.</div>
@@ -83,24 +83,23 @@ const JourneySection: React.FC = () => {
         />
         <TimelineCard
           date='2018 - 2020'
-          title='Master of Engineering - Printing Engineering'
+          title='Master of Printing Engineering'
           subHeader='Vilnius Gediminas Technical University'
           icon={<SchoolIcon color='primary' />}
         />
         <TimelineCard
           date='09/2016 - Present'
           title='Sales Manager'
-          subHeader='Air Idea, UAB (Vilnius)'
+          subHeader={[
+            'Air Idea, UAB (Vilnius)',
+            <br key='br' />,
+            'Supplies and consulting company for printing houses in Baltics',
+          ]}
           description={
             <div>
-              <div>
-                Supplies and consulting company for printing houses in Baltics
-              </div>
-              <ul>
-                <li>Regular communication with ~50 suppliers and end- users</li>
-                <li>Taking care of custom project developments</li>
-                <li>Conflict management during delays or quality issues</li>
-              </ul>
+              <div>Regular communication with ~50 suppliers and end- users</div>
+              <div>Taking care of custom project developments</div>
+              <div>Conflict management during delays or quality issues</div>
             </div>
           }
           icon={<WorkOutlineOutlinedIcon color='primary' />}
@@ -111,18 +110,16 @@ const JourneySection: React.FC = () => {
           subHeader='Lionbridge (Remote Contract)'
           description={
             <div>
-              <ul>
-                <li>Evaluation of search engine results</li>
-                <li>Website quality and relevance assessment</li>
-                <li>Rating string translations</li>
-              </ul>
+              <div>Evaluation of search engine results</div>
+              <div>Website quality and relevance assessment</div>
+              <div>Rating string translations</div>
             </div>
           }
           icon={<WorkOutlineOutlinedIcon color='primary' />}
         />
         <TimelineCard
           date='2014 - 2018'
-          title='Bachelor of Engineering - Printing Engineering'
+          title='Bachelor of Printing Engineering'
           subHeader='Vilnius Gediminas Technical University'
           icon={<SchoolIcon color='primary' />}
         />
