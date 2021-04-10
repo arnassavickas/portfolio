@@ -53,7 +53,7 @@ const CardImage: React.FC<CardImageProps> = ({
         <CardContent>
           <Typography
             variant='body2'
-            component='p'
+            component='div'
             className={styles.description}
           >
             {description}
