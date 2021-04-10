@@ -12,8 +12,8 @@ interface CardImageProps {
   title: string;
   date: string;
   subHeader: string;
-  image: string;
-  imageTitle: string;
+  image?: string;
+  imageTitle?: string;
   description: string;
   buttons: React.ReactNode[];
 }
@@ -40,11 +40,14 @@ const CardImage: React.FC<CardImageProps> = ({
           </>
         }
       />
-      <CardMedia
-        classes={{ root: styles.image }}
-        image={image}
-        title={imageTitle}
-      />
+      {image && (
+        <CardMedia
+          classes={{ root: styles.image }}
+          image={image}
+          title={imageTitle}
+        />
+      )}
+
       <CardContent>
         <Typography variant='body2' component='p'>
           {description}

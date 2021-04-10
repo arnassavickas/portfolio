@@ -14,8 +14,8 @@ interface TimelineCardProps {
   date: string;
   title: string;
   subHeader: string;
-  image: string;
-  imageTitle: string;
+  image?: string;
+  imageTitle?: string;
   description: string;
   buttons: React.ReactNode[];
   icon: React.ReactNode;
