@@ -18,8 +18,7 @@ interface CardImageProps {
   buttons?: React.ReactNode[];
   icon: React.ReactNode;
 }
-//TODO doesn't fit on mobile
-//TODO add date on mobile
+
 const CardImage: React.FC<CardImageProps> = ({
   title,
   date,
