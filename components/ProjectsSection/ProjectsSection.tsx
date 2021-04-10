@@ -106,12 +106,12 @@ const ProjectsSection: React.FC = () => {
           title='karolinavaitonyte.lt'
           subHeader='Wordpress, custom SEO'
           image='/images/karolinavaitonyte.jpg'
-          imageTitle='Letterhead screenshot'
+          imageTitle='karolinavaitonyte screenshot'
           description='Professional photographer’s website
           to showcase works and deliver finished photoshoots to clients.'
           buttons={[
             <Button
-              key='letterheaddemo'
+              key='karolinavaitonytedemo'
               variant='outlined'
               href='https://www.karolinavaitonyte.lt/'
               target='_blank'
