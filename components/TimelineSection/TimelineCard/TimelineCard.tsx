@@ -44,6 +44,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
       </TimelineSeparator>
       <TimelineContent>
         <CardImage
+          date={date}
           title={title}
           subHeader={subHeader}
           image={image}

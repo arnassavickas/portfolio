@@ -3,3 +3,11 @@
   aspect-ratio: 1;
   background-size: contain;
 }
+
+.date {
+  display: none;
+  @media (max-width: 780px) {
+    display: block;
+  }
+  color: black;
+}

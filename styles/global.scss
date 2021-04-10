@@ -32,3 +32,9 @@ img {
 .italic {
   font-style: italic;
 }
+
+br {
+  display: block;
+  content: '';
+  margin-top: 0;
+}

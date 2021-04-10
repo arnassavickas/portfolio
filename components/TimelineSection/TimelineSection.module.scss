@@ -6,4 +6,12 @@
   justify-content: center;
   position: relative;
   padding: 4rem 0;
+
+  > h2 {
+    text-align: center;
+  }
+
+  > * {
+    width: 100%;
+  }
 }

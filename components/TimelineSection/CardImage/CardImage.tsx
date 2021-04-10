@@ -10,15 +10,18 @@ import { CardActions } from '@material-ui/core';
 
 interface CardImageProps {
   title: string;
+  date: string;
   subHeader: string;
   image: string;
   imageTitle: string;
   description: string;
   buttons: React.ReactNode[];
 }
-
+//TODO doesn't fit on mobile
+//TODO add date on mobile
 const CardImage: React.FC<CardImageProps> = ({
   title,
+  date,
   subHeader,
   image,
   imageTitle,
@@ -27,7 +30,16 @@ const CardImage: React.FC<CardImageProps> = ({
 }) => {
   return (
     <Card>
-      <CardHeader title={title} subheader={subHeader} />
+      <CardHeader
+        title={title}
+        subheader={
+          <>
+            <span className={styles.date}>{date}</span>
+            <br />
+            {subHeader}
+          </>
+        }
+      />
       <CardMedia
         classes={{ root: styles.image }}
         image={image}
