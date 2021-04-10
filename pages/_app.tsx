@@ -34,6 +34,11 @@ const theme = createMuiTheme({
         },
       },
     },
+    MuiTimeline: {
+      root: {
+        maxWidth: '1200px',
+      },
+    },
   },
 });
 
