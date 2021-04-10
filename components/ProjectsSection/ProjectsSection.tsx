@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './ProjectsSection.module.scss';
 
 import Timeline from '@material-ui/lab/Timeline';
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
@@ -6,17 +7,16 @@ import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 import WorkIcon from '@material-ui/icons/Work';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import Typography from '@material-ui/core/Typography';
-import styles from './TimelineSection.module.scss';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
-import TimelineCard from './TimelineCard/TimelineCard';
+import TimelineCard from '../TimelineCard/TimelineCard';
 import { Button } from '@material-ui/core';
 
-const TimelineSection: React.FC = () => {
+const ProjectsSection: React.FC = () => {
   const [open, setOpen] = React.useState(false);
 
   return (
@@ -51,7 +51,7 @@ const TimelineSection: React.FC = () => {
               Demo
             </Button>,
           ]}
-          icon={<PhotoCameraIcon />}
+          icon={<PhotoLibraryIcon color='primary' />}
         />
         <TimelineCard
           date='03-2021'
@@ -71,7 +71,7 @@ const TimelineSection: React.FC = () => {
               Live site
             </Button>,
           ]}
-          icon={<WorkIcon />}
+          icon={<WorkIcon color='primary' />}
         />
         <TimelineCard
           date='01-2021'
@@ -99,7 +99,7 @@ const TimelineSection: React.FC = () => {
               Demo
             </Button>,
           ]}
-          icon={<PictureAsPdfIcon />}
+          icon={<PictureAsPdfIcon color='primary' />}
         />
         <TimelineCard
           date='03-2020'
@@ -119,7 +119,7 @@ const TimelineSection: React.FC = () => {
               Live site
             </Button>,
           ]}
-          icon={<PhotoLibraryIcon />}
+          icon={<PhotoCameraIcon color='primary' />}
         />
       </Timeline>
       <Dialog
@@ -149,4 +149,4 @@ const TimelineSection: React.FC = () => {
   );
 };
 
-export default TimelineSection;
+export default ProjectsSection;

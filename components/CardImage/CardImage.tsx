@@ -14,8 +14,9 @@ interface CardImageProps {
   subHeader: string;
   image?: string;
   imageTitle?: string;
-  description: string;
-  buttons: React.ReactNode[];
+  description?: React.ReactNode;
+  buttons?: React.ReactNode[];
+  icon: React.ReactNode;
 }
 //TODO doesn't fit on mobile
 //TODO add date on mobile
@@ -27,17 +28,19 @@ const CardImage: React.FC<CardImageProps> = ({
   imageTitle,
   description,
   buttons,
+  icon,
 }) => {
   return (
-    <Card>
+    <Card raised>
       <CardHeader
-        title={title}
+        avatar={icon}
+        title={<Typography variant='h6'>{title}</Typography>}
         subheader={
-          <>
+          <Typography variant='subtitle2'>
             <span className={styles.date}>{date}</span>
             <br />
             {subHeader}
-          </>
+          </Typography>
         }
       />
       {image && (
@@ -47,13 +50,18 @@ const CardImage: React.FC<CardImageProps> = ({
           title={imageTitle}
         />
       )}
-
-      <CardContent>
-        <Typography variant='body2' component='p'>
-          {description}
-        </Typography>
-      </CardContent>
-      <CardActions>{buttons}</CardActions>
+      {description && (
+        <CardContent>
+          <Typography
+            variant='body2'
+            component='p'
+            className={styles.description}
+          >
+            {description}
+          </Typography>
+        </CardContent>
+      )}
+      {buttons && <CardActions>{buttons}</CardActions>}
     </Card>
   );
 };

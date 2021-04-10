@@ -1,0 +1,32 @@
+.image {
+  object-fit: contain;
+  aspect-ratio: 1;
+  background-size: contain;
+}
+
+.date {
+  display: none;
+  @media (max-width: 780px) {
+    display: block;
+  }
+  color: black;
+}
+
+.description {
+  > div > div:first-child {
+    margin-bottom: 1rem;
+  }
+  li:first-of-type {
+    border-top: 1px solid #aaa;
+  }
+  li {
+    border-bottom: 1px solid #aaa;
+    color: rgb(19, 19, 19);
+    font-size: 0.8rem;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}

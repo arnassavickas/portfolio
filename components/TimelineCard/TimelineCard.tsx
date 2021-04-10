@@ -16,8 +16,8 @@ interface TimelineCardProps {
   subHeader: string;
   image?: string;
   imageTitle?: string;
-  description: string;
-  buttons: React.ReactNode[];
+  description?: React.ReactNode;
+  buttons?: React.ReactNode[];
   icon: React.ReactNode;
 }
 
@@ -51,6 +51,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
           imageTitle={imageTitle}
           description={description}
           buttons={buttons}
+          icon={icon}
         />
       </TimelineContent>
     </TimelineItem>
