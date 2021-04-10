@@ -1,7 +1,8 @@
 import styles from './WelcomeSection.module.scss';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { IconButton } from '@material-ui/core';
-import Typewritter from '../Typewriter/Typewriter';
+import Typewritter from './Typewriter/Typewriter';
+import ContactBtns from '../ContactBtns/ContactBtns';
 
 const WelcomeSection: React.FC = () => {
   const smoothScrollTo = (e: { preventDefault: () => void }) => {
@@ -16,7 +17,8 @@ const WelcomeSection: React.FC = () => {
   };
 
   return (
-    <section className={styles.heading}>
+    <section className={styles.welcomeSection}>
+      <ContactBtns />
       <Typewritter />
       <IconButton
         onClick={smoothScrollTo}
