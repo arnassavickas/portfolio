@@ -19,7 +19,7 @@ const AboutMeSection: React.FC = () => {
       </p>
       <p className={styles.paragraph}>
         Unfortunatelly, one decision after another, and I have moved my life at
-        an entirely different direction.
+        an entirely different direction - engineering and sales.
       </p>
       <p className={styles.paragraph}>
         But the time has come to follow my dreams and finally become a
