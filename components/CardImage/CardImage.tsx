@@ -3,7 +3,6 @@ import styles from './CardImage.module.scss';
 
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { CardActions } from '@material-ui/core';
@@ -12,7 +11,7 @@ interface CardImageProps {
   title: string;
   date: string;
   subHeader: React.ReactNode[] | string;
-  image?: string;
+  src?: string;
   imageTitle?: string;
   description?: React.ReactNode;
   buttons?: React.ReactNode[];
@@ -23,7 +22,7 @@ const CardImage: React.FC<CardImageProps> = ({
   title,
   date,
   subHeader,
-  image,
+  src,
   imageTitle,
   description,
   buttons,
@@ -46,12 +45,12 @@ const CardImage: React.FC<CardImageProps> = ({
           </Typography>
         }
       />
-      {image && (
-        <CardMedia
-          classes={{ root: styles.image }}
-          image={image}
-          title={imageTitle}
-        />
+      {src && (
+        <picture className={styles.image}>
+          <source srcSet={`${src}.webp`} type='image/webp' />
+          <source srcSet={`${src}.jpg`} type='image/jpeg' />
+          <img src={`${src}.jpg`} alt={imageTitle} />
+        </picture>
       )}
       {description && (
         <CardContent>

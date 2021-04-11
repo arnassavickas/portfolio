@@ -28,8 +28,8 @@ const ProjectsSection: React.FC = () => {
         <TimelineCard
           date='02-2021 - Present'
           title='Photoproof'
-          subHeader='React, Firebase, Material-UI'
-          image='/images/photoproof.jpg'
+          subHeader='React, Firebase, Material-UI, Jest'
+          src='/images/photoproof'
           imageTitle='Photoproof screenshot'
           description='Advanced React web app built for a
               photographer to help clients select and comment
@@ -57,7 +57,7 @@ const ProjectsSection: React.FC = () => {
           date='03-2021'
           title='airidea.lt'
           subHeader='Wordpress, custom SEO, content creation'
-          image='/images/airidea.jpg'
+          src='/images/airidea'
           imageTitle='Airidea.lt screenshot'
           description='Company’s website to provide details
           of supplied products and equipment for printing houses.'
@@ -77,7 +77,7 @@ const ProjectsSection: React.FC = () => {
           date='01-2021'
           title='Letterhead'
           subHeader='React'
-          image='/images/letterhead.jpg'
+          src='/images/letterhead'
           imageTitle='Letterhead screenshot'
           description='Easy-to-use React web app to apply a
           company’s letterhead to a pdf file.'
@@ -105,7 +105,7 @@ const ProjectsSection: React.FC = () => {
           date='03-2020'
           title='karolinavaitonyte.lt'
           subHeader='Wordpress, custom SEO'
-          image='/images/karolinavaitonyte.jpg'
+          src='/images/karolinavaitonyte'
           imageTitle='karolinavaitonyte screenshot'
           description='Professional photographer’s website
           to showcase works and deliver finished photoshoots to clients.'

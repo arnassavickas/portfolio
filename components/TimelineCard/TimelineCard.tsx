@@ -25,7 +25,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
   date,
   title,
   subHeader,
-  image,
+  src,
   imageTitle,
   description,
   buttons,
@@ -47,7 +47,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
           date={date}
           title={title}
           subHeader={subHeader}
-          image={image}
+          src={src}
           imageTitle={imageTitle}
           description={description}
           buttons={buttons}
