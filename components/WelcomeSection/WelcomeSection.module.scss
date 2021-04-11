@@ -10,14 +10,17 @@
   padding: 1rem 0 2rem 0;
 }
 
-
 .moreBtn {
+  button {
+    background-color: none;
+  }
+
   svg {
     font-size: 4rem;
     animation-name: pulsating;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-delay: 7s;
+    animation-delay: 5s;
     opacity: 0;
   }
 }

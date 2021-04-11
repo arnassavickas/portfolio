@@ -12,16 +12,16 @@
     margin: 0 auto;
   }
   .firstLine {
-    animation: typing 0.3s steps(3, end) 1s both, blink-caret 0.75s step-end 3;
+    animation: typing 0.2s steps(3, end) 1s both, blink-caret 0.75s step-end 2;
   }
 
   .secondLine {
-    animation: typing 1.9s steps(19, end) 2.5s both,
-      blink-caret 0.75s step-end 4 2s;
+    animation: typing 1.2s steps(19, end) 2s both,
+      blink-caret 0.75s step-end 3 1.5s;
   }
   .thirdLine {
-    animation: typing 1.5s steps(16, end) 5.2s both,
-      blink-caret 0.75s step-end infinite 5.2s;
+    animation: typing 1s steps(16, end) 3.5s both,
+      blink-caret 0.75s step-end infinite 3.5s;
   }
 }
 
