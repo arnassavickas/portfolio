@@ -16,13 +16,20 @@ const theme = createMuiTheme({
       'Arial',
       'sans-serif',
     ].join(','),
-    fontWeightLight: 300,
-    fontWeightBold: 300,
+    fontWeightRegular: 400,
+    fontWeightLight: 400,
+    fontWeightBold: 400,
     subtitle2: {
       fontWeight: 500,
     },
     body2: {
       fontWeight: 300,
+    },
+    h5: {
+      fontWeight: 500,
+    },
+    h4: {
+      fontWeight: 500,
     },
   },
   overrides: {
