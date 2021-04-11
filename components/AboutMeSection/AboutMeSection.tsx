@@ -11,6 +11,8 @@ const AboutMeSection: React.FC = () => {
           className={styles.profile}
           src='/images/profile.jpg'
           alt='Picture of the author'
+          width='200'
+          height='200'
         />
       </picture>
       <Typography variant='h4' component='h2'>

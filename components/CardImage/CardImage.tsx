@@ -46,10 +46,16 @@ const CardImage: React.FC<CardImageProps> = ({
         }
       />
       {src && (
-        <picture className={styles.image}>
+        <picture>
           <source srcSet={`${src}.webp`} type='image/webp' />
           <source srcSet={`${src}.jpg`} type='image/jpeg' />
-          <img src={`${src}.jpg`} alt={imageTitle} />
+          <img
+            className={styles.image}
+            width='600'
+            height='600'
+            src={`${src}.jpg`}
+            alt={imageTitle}
+          />
         </picture>
       )}
       {description && (

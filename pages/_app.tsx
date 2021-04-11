@@ -31,6 +31,9 @@ const theme = createMuiTheme({
     h4: {
       fontWeight: 500,
     },
+    h2: {
+      fontWeight: 500,
+    },
   },
   overrides: {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
