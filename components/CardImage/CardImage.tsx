@@ -33,9 +33,13 @@ const CardImage: React.FC<CardImageProps> = ({
     <Card raised>
       <CardHeader
         avatar={icon}
-        title={<Typography variant='h6'>{title}</Typography>}
+        title={
+          <Typography variant='h6' component='h4'>
+            {title}
+          </Typography>
+        }
         subheader={
-          <Typography variant='subtitle2'>
+          <Typography variant='subtitle2' component='h5'>
             <span className={styles.date}>{date}</span>
             <br />
             {subHeader}

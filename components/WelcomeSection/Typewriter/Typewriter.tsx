@@ -1,22 +1,23 @@
+import { Typography } from '@material-ui/core';
 import styles from './Typewritter.module.scss';
 
 const Typewritter: React.FC = () => {
   return (
-    <div className={styles.typewriter}>
+    <Typography variant='h5' component='h1' className={styles.typewriter}>
       <div>
-        <h2 className={`${styles.lines} ${styles.firstLine}`}>Hi,</h2>
+        <div className={`${styles.lines} ${styles.firstLine}`}>Hi,</div>
       </div>
       <div>
-        <h2 className={`${styles.lines} ${styles.secondLine}`}>
+        <div className={`${styles.lines} ${styles.secondLine}`}>
           {`I'm Arnas Savickas,`}
-        </h2>
+        </div>
       </div>
       <div>
-        <h2 className={`${styles.lines} ${styles.thirdLine}`}>
+        <div className={`${styles.lines} ${styles.thirdLine}`}>
           a web developer.
-        </h2>
+        </div>
       </div>
-    </div>
+    </Typography>
   );
 };
 
