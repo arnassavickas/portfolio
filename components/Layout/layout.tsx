@@ -10,7 +10,8 @@ const Layout: React.FC = ({ children }) => {
         <meta
           name='description'
           content={`Hi, I'm Arnas, a web developer.
-          Here you will learn about my journey and projects I have done so far`}
+          Here you will learn about my journey and
+          projects I have done so far`}
         />
         <meta name='og:title' content={siteTitle} />
         <meta name='twitter:card' content='summary_large_image' />
